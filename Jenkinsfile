@@ -13,7 +13,7 @@ pipeline{
         stage('Build Docker Image'){
             steps{
                 script{
-                    sh 'docker build -t oshabz/devops-integration:1.0 .'
+                    sh 'docker build -t oshabz/devops-integration:${BUILD_NUMBER} .'
                 }
             }
         }
